@@ -9,6 +9,7 @@
     {
       "name": "Small-Business-EU",
       "source": "./",
+      "url": "https://github.com/artdaw/smb-eu",
       "description": "EU-native small business workflows — accounting, VAT, GDPR, SEPA payments, e-invoicing, and growth."
     }
   ]
