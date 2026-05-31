@@ -67,8 +67,9 @@ Connectors are configured in [`.mcp.json`](.mcp.json). Run `/smb-onboard` or ask
 - **Slack** — brief delivery and notifications
 - **Canva** — generates on-brand social assets
 
-**File storage:**
+**File storage & notes:**
 - **Google Drive / OneDrive** — file storage and templates
+- **Notion** — docs, wikis, and databases (SOPs, project notes, CRM-adjacent tracking)
 
 **Contracts & signatures:**
 - **DocuSign** — contract review from pending envelopes
@@ -81,7 +82,7 @@ You don't need all of these to start. Connect one or two and you'll immediately 
 
 Most connectors need **no developer setup** — you authenticate with a normal in-session sign-in.
 
-- **OAuth-in-session (just click sign-in):** Mollie, PayPal, SumUp, HubSpot, Brevo, Canva, DocuSign, Calendly, Slack, Microsoft 365. Nothing to configure.
+- **OAuth-in-session (just click sign-in):** Mollie, PayPal, SumUp, HubSpot, Brevo, Canva, DocuSign, Calendly, Slack, Microsoft 365, Notion. Nothing to configure.
 - **Google (Gmail / Calendar / Drive):** connect these through your **Claude / Cowork account connector settings** (Settings → Connectors → Google), not through this plugin. It's a one-click "Sign in with Google" — no Google Cloud project or OAuth credentials required. The skills automatically use whichever Google connector your account exposes.
 - **Needs credentials (only these two):** Exact Online and Pipedrive use stdio servers that require your own keys. Set them via environment variables using `${VAR}` expansion, then restart Claude Code and run `/reload-plugins`.
 
