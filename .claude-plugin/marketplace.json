@@ -1,0 +1,15 @@
+{
+  "name": "smb-claude",
+  "owner": {
+    "name": "Gleb Galkin",
+    "email": "me@artdaw.com",
+    "website": "https://artdaw.com"
+  },
+  "plugins": [
+    {
+      "name": "small-business-eu",
+      "source": "./",
+      "description": "EU-native small business workflows — accounting, VAT, GDPR, SEPA payments, e-invoicing, and growth."
+    }
+  ]
+}
