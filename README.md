@@ -14,30 +14,49 @@ You don't need to memorize anything. Just tell Claude what you need — "I need 
 
 ## Installation
 
-This repo doubles as its own plugin marketplace (`.claude-plugin/marketplace.json`). Install it locally from the repo root.
+This repo doubles as its own plugin marketplace (`.claude-plugin/marketplace.json`), so you install it straight from GitHub — no clone required.
 
 ### Claude Code
 
 In an interactive session:
 
 ```
-/plugin marketplace add /Users/gleb/Developer/smb-claude
-/plugin install small-business-eu@smb-claude
+/plugin marketplace add artdaw/small-business-eu
+/plugin install small-business-eu@artdaw
 /reload-plugins
 ```
 
 Or from the CLI:
 
 ```bash
-claude plugin marketplace add /Users/gleb/Developer/smb-claude
-claude plugin install small-business-eu@smb-claude
+claude plugin marketplace add artdaw/small-business-eu
+claude plugin install small-business-eu@artdaw
 ```
 
-Because the marketplace `source` is the repo itself, any edits you make to the skills here are picked up by the installed plugin — handy while developing.
+`artdaw/small-business-eu` is GitHub shorthand for [`https://github.com/artdaw/small-business-eu`](https://github.com/artdaw/small-business-eu) — you can pass the full URL instead if you prefer. The marketplace name (`artdaw`) comes from `.claude-plugin/marketplace.json`; the plugin is installed as `small-business-eu@artdaw`.
+
+To pick up upstream changes later, refresh the marketplace and reload:
+
+```
+/plugin marketplace update artdaw
+/reload-plugins
+```
+
+### Local development
+
+If you've cloned the repo and want your edits picked up live, add the marketplace from the local path instead:
+
+```
+/plugin marketplace add /path/to/small-business-eu
+/plugin install small-business-eu@artdaw
+/reload-plugins
+```
+
+Because the marketplace `source` is the repo itself, any edits you make to the skills here are picked up by the installed plugin after `/reload-plugins`.
 
 ### Cowork
 
-Add the marketplace from the repo (or a git remote, once published) and install the `small-business-eu` plugin.
+Add the marketplace from the GitHub repo (`artdaw/small-business-eu`) and install the `small-business-eu` plugin.
 
 Once installed, say **"set me up"** to run the `smb-onboard` skill — it'll help Claude understand your business, your country, your VAT situation, and the tools you already use.
 
