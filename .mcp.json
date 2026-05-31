@@ -1,16 +1,5 @@
 {
   "mcpServers": {
-    "exact-online": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@cdata/exact-online-mcp-server"],
-      "env": {
-        "EXACTONLINE_CLIENTID": "${EXACTONLINE_CLIENTID}",
-        "EXACTONLINE_CLIENTSECRET": "${EXACTONLINE_CLIENTSECRET}",
-        "EXACTONLINE_DIVISION": "${EXACTONLINE_DIVISION}",
-        "MOLLIE_API_OAUTH_ORG_TOKEN": "${MOLLIE_API_OAUTH_ORG_TOKEN}"
-      }
-    },
     "Mollie": {
       "command": "npx",
        "args": [
@@ -74,6 +63,22 @@
     "notion": {
       "type": "http",
       "url": "https://mcp.notion.com/mcp"
+    },
+    "gmail": {
+      "type": "http",
+      "url": "https://gmail.mcp.claude.com/mcp"
+    },
+    "google-calendar": {
+      "type": "http",
+      "url": "https://gcal.mcp.claude.com/mcp"
+    },
+    "google-drive": {
+      "type": "http",
+      "url": "https://gdrive.mcp.claude.com/mcp"
+    },
+    "calcom": {
+      "type": "http",
+      "url": "https://mcp.cal.com/mcp"
     }
   }
 }
