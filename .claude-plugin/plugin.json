@@ -1,5 +1,6 @@
 {
-  "name": "Small-Business-EU",
+  "name": "small-business-eu",
+  "title": "Small Business EU",
   "version": "0.4.0",
   "description": "EU-native small business workflows — accounting, VAT, GDPR, SEPA payments, e-invoicing, and growth — using Exact Online, Mollie, PayPal, Notion, Brevo, Pipedrive, Calendly, DocuSign, and more. Every step that touches money or customers requires your approval.",
   "author": {
